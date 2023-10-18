@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 import Image from 'next/image';
 import cardStyles from '../styles/Card.module.scss';
@@ -19,7 +20,8 @@ interface card {
 const Card: React.FC<card> = ({ name, mainPicture }) => {
   const [cardHovered, setCardHovered] = useState<boolean>(false);
   return (
-    <div
+    <Link
+      href={`/product/${name}`}
       className={
         cardHovered
           ? `${cardStyles.card} ${cardStyles.card__hovered}`
@@ -38,7 +40,7 @@ const Card: React.FC<card> = ({ name, mainPicture }) => {
       <div className={cardStyles.card__right}>
         <CardPicture mainPicture={mainPicture} name={name} />
       </div>
-    </div>
+    </Link>
   );
 };
 

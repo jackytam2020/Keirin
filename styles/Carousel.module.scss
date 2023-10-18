@@ -1,0 +1,55 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    height: 400px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 1rem;
+    align-items: center;
+  }
+
+  &__indicators {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__leftButton {
+    font-size: 64px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  &__rightButton {
+    font-size: 64px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    cursor: pointer;
+  }
+
+  &__rightButtonHidden,
+  &__leftButtonHidden {
+    font-size: 64px;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  &__radioButtons {
+    cursor: pointer;
+  }
+}

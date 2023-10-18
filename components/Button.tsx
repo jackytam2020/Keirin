@@ -1,11 +1,21 @@
 import React from 'react';
 import buttonStyles from '../styles/ButtonStyles.module.scss';
 
+import { Link } from 'react-scroll/modules';
+
 const Button = () => {
   return (
-    <div className={buttonStyles.container}>
-      <h3>Browse Products</h3>
-    </div>
+    <>
+      <Link
+        to="products"
+        smooth={true}
+        duration={1000}
+        className={buttonStyles.container}
+        offset={-50}
+      >
+        <h3>Browse Products</h3>
+      </Link>
+    </>
   );
 };
 

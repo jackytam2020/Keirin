@@ -12,7 +12,9 @@ const Hero = () => {
         className={HeroStyles.hero__banner}
         src={banner}
         alt="Hero Banner"
+        priority
       />
+
       <div className={HeroStyles.hero__button}>
         <Button />
       </div>

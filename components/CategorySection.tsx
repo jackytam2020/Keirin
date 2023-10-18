@@ -7,7 +7,7 @@ import { products } from '@/utils/data/products';
 const CategorySection = () => {
   return (
     <main className={categoryStyles.categorySection}>
-      <h1 className={categoryStyles.categorySection__header}>
+      <h1 className={categoryStyles.categorySection__header} id="products">
         Shop by category
       </h1>
 
