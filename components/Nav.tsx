@@ -1,16 +1,27 @@
 import React from 'react';
 import navStyles from '../styles/Nav.module.scss';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
-const Nav = () => {
+interface NavTypes {
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Nav: React.FC<NavTypes> = ({ setIsNavOpen }) => {
   return (
     <nav className={navStyles.nav}>
       <div className={navStyles.nav__left}>
-        <h1>Keirin Enterprise co.,ltd.</h1>
+        <Link href={'/'}>
+          <h1>Keirin Enterprise co.,ltd.</h1>
+        </Link>
       </div>
       <div className={navStyles.nav__right}>
         <div className={navStyles.nav__hamMenuIcon}>
-          <MenuIcon />
+          <MenuIcon
+            onClick={() => {
+              setIsNavOpen(true);
+            }}
+          />
         </div>
       </div>
     </nav>

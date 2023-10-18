@@ -4,7 +4,7 @@ export const products = [
     mainPicture: '/assets/images/door_1-removebg-preview.png',
     pictures: [
       '/assets/images/door_1-removebg-preview.png',
-      '/assets/images/door_2.png',
+      '/assets/images/door2.png',
     ],
     description:
       'Our selection of exterior wood doors are made from premium grade wood species including white oak, black walnut and glass',

@@ -1,4 +1,13 @@
 .layout {
   height: 100vh;
   width: 100%;
+
+  &__navPopUut {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    right: 0;
+    z-index: 99;
+  }
 }
