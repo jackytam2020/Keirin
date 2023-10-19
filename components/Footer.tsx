@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <div className={footerStyles.footer__content}>
-        <h1>Keirin Enterprise co.,ltd.</h1>
+        <h1 className={footerStyles.footer__header}>
+          Keirin Enterprise co.,ltd.
+        </h1>
         <div className={footerStyles.footer__socialContents}>
           <a href="mailto: tsuper2009@gmail.com">
             <MailIcon className={footerStyles.footer__emailIcon} />

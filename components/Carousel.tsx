@@ -59,7 +59,7 @@ const Carousel: React.FC<CarouselType> = ({ currentProduct }) => {
       </div>
 
       <div className={carouselStyles.carousel__indicators}>
-        {currentProduct.pictures.map((picture, index) => {
+        {currentProduct.pictures.map((_picture, index) => {
           return index === currentIndex ? (
             <RadioButtonCheckedIcon
               key={Math.random() * currentProduct.pictures.length}
