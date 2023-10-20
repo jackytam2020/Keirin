@@ -1,3 +1,5 @@
+@use '../styles/partials/breakpoints' as *;
+
 .carousel {
   width: 100%;
   overflow: hidden;
@@ -53,3 +55,31 @@
     cursor: pointer;
   }
 }
+
+@include small() {
+  .carousel {
+    &__leftButton {
+      top: 50%;
+      left: 5%;
+    }
+
+    &__rightButton {
+      top: 50%;
+      right: 5%;
+    }
+  }
+}
+@include medium() {
+  .carousel {
+    &__leftButton {
+      top: 50%;
+      left: 20%;
+    }
+
+    &__rightButton {
+      top: 50%;
+      right: 20%;
+    }
+  }
+}
+// @include large(){}
