@@ -30,7 +30,7 @@
   &__leftButton {
     font-size: 64px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 25%;
     z-index: 10;
     cursor: pointer;
@@ -39,16 +39,14 @@
   &__rightButton {
     font-size: 64px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 25%;
     cursor: pointer;
   }
 
   &__rightButtonHidden,
   &__leftButtonHidden {
-    font-size: 64px;
-    opacity: 0;
-    z-index: 10;
+    display: none;
   }
 
   &__radioButtons {

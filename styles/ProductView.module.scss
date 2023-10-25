@@ -12,7 +12,6 @@
 
   &__carouselContainer {
     width: 100%;
-    margin-top: 2rem;
   }
 
   &__description {
@@ -22,6 +21,11 @@
   &__descriptionSection {
     width: 100%;
     margin-top: 2rem;
+  }
+
+  &__specificationLine {
+    margin-top: 1rem;
+    font-size: 18pt;
   }
 }
 
@@ -54,6 +58,7 @@
 
     &__carouselContainer {
       max-width: 1080px;
+      margin-top: 2rem;
     }
   }
 }

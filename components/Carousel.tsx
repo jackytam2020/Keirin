@@ -13,7 +13,7 @@ interface ProductType {
   mainPicture: string;
   pictures: string[];
   description: string;
-  specifications?: string;
+  specifications?: string[];
 }
 
 interface CarouselType {
