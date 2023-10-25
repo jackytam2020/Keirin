@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+
 import ProductView from '@/components/ProductView';
 import OtherProducts from '@/components/OtherProducts';
 
@@ -38,6 +40,9 @@ const Product = () => {
 
   return (
     <main>
+      <Head>
+        <title>{`Keirin Enterprises - ${productName}`}</title>
+      </Head>
       {currentProduct && (
         <ProductView
           productTitle={productName}

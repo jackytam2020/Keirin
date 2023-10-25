@@ -14,7 +14,7 @@ export const products = [
     mainPicture: '/assets/images/wall_panel_2.png',
     pictures: [
       '/assets/images/wall_panel_2.png',
-      '/assets/images/wallpanel1.jpeg',
+      '/assets/images/wallpanel1.jpg',
       '/assets/images/wallpanel3.jpeg',
     ],
     description: `Wall veneer panels will get an interior that's reliable, effortless, and unique, it offers design attributes with optimal fire protection, sound absorption and sound dispersion.`,
@@ -34,7 +34,7 @@ export const products = [
     mainPicture: '/assets/images/cabinet_parts-removebg-preview.png',
     pictures: [
       '/assets/images/cabinet_parts-removebg-preview.png',
-      '/assets/images/cabinetdoor.jpeg',
+      '/assets/images/cabinetdoor.jpg',
     ],
     description: `Kitchen cabinet making will include: Taking customer orders and agreeing on the specifications. Reviewing drawings and choosing appropriate materials, such as the correct type of timber, veneer or synthetic board. Cutting and joining wood to make parts according to the plans.`,
   },
