@@ -9,7 +9,7 @@ interface ProductType {
   mainPicture: string;
   pictures: string[];
   description: string;
-  specifications?: string;
+  specifications?: string[];
 }
 
 interface ProductView {
@@ -34,6 +34,29 @@ const ProductView: React.FC<ProductView> = ({
         <p className={productViewStyles.productView__description}>
           {currentProduct.description}
         </p>
+        {currentProduct.specifications && (
+          <>
+            <p style={{ fontSize: '24px', marginTop: '2rem' }}>
+              Specifications
+            </p>
+            <p className={productViewStyles.productView__specifications}>
+              {currentProduct.specifications.map((spec) => {
+                return (
+                  <>
+                    <p
+                      key={Math.random() * 1000}
+                      className={
+                        productViewStyles.productView__specificationLine
+                      }
+                    >
+                      {spec}
+                    </p>
+                  </>
+                );
+              })}
+            </p>
+          </>
+        )}
       </section>
     </section>
   );

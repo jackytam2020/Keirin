@@ -10,7 +10,7 @@ interface ProductType {
   mainPicture: string;
   pictures: string[];
   description: string;
-  specifications?: string;
+  specifications?: string[];
 }
 
 const Product = () => {
@@ -21,6 +21,7 @@ const Product = () => {
 
   useEffect(() => {
     if (router.asPath) {
+      window.scroll(0, 0);
       setProductName(router.query.product);
     }
   }, [router.asPath]);

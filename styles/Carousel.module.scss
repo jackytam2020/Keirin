@@ -1,3 +1,5 @@
+@use '../styles/partials/breakpoints' as *;
+
 .carousel {
   width: 100%;
   overflow: hidden;
@@ -28,7 +30,7 @@
   &__leftButton {
     font-size: 64px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 25%;
     z-index: 10;
     cursor: pointer;
@@ -37,19 +39,45 @@
   &__rightButton {
     font-size: 64px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 25%;
     cursor: pointer;
   }
 
   &__rightButtonHidden,
   &__leftButtonHidden {
-    font-size: 64px;
-    opacity: 0;
-    z-index: 10;
+    display: none;
   }
 
   &__radioButtons {
     cursor: pointer;
   }
 }
+
+@include small() {
+  .carousel {
+    &__leftButton {
+      top: 50%;
+      left: 5%;
+    }
+
+    &__rightButton {
+      top: 50%;
+      right: 5%;
+    }
+  }
+}
+@include medium() {
+  .carousel {
+    &__leftButton {
+      top: 50%;
+      left: 20%;
+    }
+
+    &__rightButton {
+      top: 50%;
+      right: 20%;
+    }
+  }
+}
+// @include large(){}
