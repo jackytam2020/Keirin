@@ -1,7 +1,11 @@
 import React from 'react';
 import carouselItemStyles from '../styles/CarouselItem.module.scss';
 
-const CarouselItem = ({ picture }) => {
+interface CarouselItemTypes {
+  picture: string;
+}
+
+const CarouselItem: React.FC<CarouselItemTypes> = ({ picture }) => {
   return (
     <div className={carouselItemStyles.carouselItem}>
       <img
