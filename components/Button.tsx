@@ -8,6 +8,7 @@ const Button = () => {
     <>
       <Link
         to="products"
+        href="/"
         smooth={true}
         duration={1000}
         className={buttonStyles.container}
