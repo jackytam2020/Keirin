@@ -81,7 +81,7 @@ const Carousel: React.FC<CarouselType> = ({ currentProduct }) => {
           onClick={() => {
             updateIndex(currentIndex + 1);
           }}
-          className={carouselStyles.carousel__rightButton}
+          id={carouselStyles.carousel__rightButton}
         />
       )}
     </div>
