@@ -34,16 +34,15 @@ const Carousel: React.FC<CarouselType> = ({ currentProduct }) => {
 
   return (
     <div className={carouselStyles.carousel}>
-      <ArrowLeftIcon
-        onClick={() => {
-          updateIndex(currentIndex - 1);
-        }}
-        className={
-          currentIndex === 0
-            ? carouselStyles.carousel__leftButtonHidden
-            : carouselStyles.carousel__leftButton
-        }
-      />
+      {currentIndex !== 0 && (
+        <ArrowLeftIcon
+          onClick={() => {
+            updateIndex(currentIndex - 1);
+          }}
+          className={carouselStyles.carousel__leftButton}
+        />
+      )}
+
       <div
         className={carouselStyles.carousel__inner}
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
@@ -77,16 +76,14 @@ const Carousel: React.FC<CarouselType> = ({ currentProduct }) => {
         })}
       </div>
 
-      <ArrowRightIcon
-        onClick={() => {
-          updateIndex(currentIndex + 1);
-        }}
-        className={
-          currentIndex === currentProduct.pictures.length - 1
-            ? carouselStyles.carousel__rightButtonHidden
-            : carouselStyles.carousel__rightButton
-        }
-      />
+      {currentIndex !== currentProduct.pictures.length - 1 && (
+        <ArrowRightIcon
+          onClick={() => {
+            updateIndex(currentIndex + 1);
+          }}
+          className={carouselStyles.carousel__rightButton}
+        />
+      )}
     </div>
   );
 };
