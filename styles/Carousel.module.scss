@@ -27,7 +27,7 @@
     margin-top: 1rem;
   }
 
-  &__leftButton {
+  #carousel__leftButton {
     font-size: 4em;
     position: absolute;
     top: 45%;
@@ -51,12 +51,12 @@
 
 @include small() {
   .carousel {
-    &__leftButton {
+    #carousel__leftButton {
       top: 50%;
       left: 5%;
     }
 
-    &__rightButton {
+    #carousel__rightButton {
       top: 50%;
       right: 5%;
     }
@@ -64,12 +64,12 @@
 }
 @include medium() {
   .carousel {
-    &__leftButton {
+    #carousel__leftButton {
       top: 50%;
       left: 20%;
     }
 
-    &__rightButton {
+    #carousel__rightButton {
       top: 50%;
       right: 20%;
     }
