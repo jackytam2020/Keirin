@@ -43,6 +43,10 @@ const Product = () => {
       <Head>
         <title>{`Keirin Enterprises - ${productName}`}</title>
       </Head>
+      <meta
+        name="Product Page"
+        content={`Discover ${productName}. Explore our ${productName} with stunning images and a detailed description. Find out how ${productName} can enhance your home or business.`}
+      />
       {currentProduct && (
         <ProductView
           productTitle={productName}
