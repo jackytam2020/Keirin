@@ -6,10 +6,20 @@
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 4rem 1rem 4rem;
 
   &__hamMenuIcon {
     cursor: pointer;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
   }
 }
 

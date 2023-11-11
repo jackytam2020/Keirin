@@ -1,7 +1,6 @@
 @use '../styles/partials/breakpoints' as *;
 
 .footer {
-  height: 230px;
   width: 100%;
   border-top: 1px solid #bfbfbf;
   margin-top: 5rem;
@@ -36,12 +35,20 @@
   &__address {
     font-size: 14px;
   }
+
+  &__logo {
+    width: 25%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 @include small() {
   .footer {
+    padding: 2rem;
     &__content {
-      padding: 0 2rem 0 2rem;
+      // padding: 0 2rem 0 2rem;
     }
 
     &__header {
@@ -52,7 +59,7 @@
 @include medium() {
   .footer {
     &__content {
-      padding: 0 6rem 0 6rem;
+      padding: 2rem 6rem 2rem 6rem;
     }
 
     &__header {
@@ -62,6 +69,7 @@
 }
 @include large() {
   .footer {
+    padding: 2rem;
     &__content {
       max-width: 1080px;
     }

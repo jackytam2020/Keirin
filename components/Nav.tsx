@@ -12,7 +12,11 @@ const Nav: React.FC<NavTypes> = ({ setIsNavOpen }) => {
     <nav className={navStyles.nav}>
       <div className={navStyles.nav__left}>
         <Link href={'/'}>
-          <h1>Keirin Enterprise co.,ltd.</h1>
+          <img
+            className={navStyles.nav__logo}
+            src="/assets/images/logo2.png"
+            alt="Kirin Logo"
+          />
         </Link>
       </div>
       <div className={navStyles.nav__right}>

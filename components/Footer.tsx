@@ -1,13 +1,18 @@
 import React from 'react';
 import footerStyles from '../styles/Footer.module.scss';
 import MailIcon from '@mui/icons-material/Mail';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <div className={footerStyles.footer__content}>
-        <h1 className={footerStyles.footer__header}>
-          Keirin Enterprise co.,ltd.
-        </h1>
+        <Link href={'/'}>
+          <img
+            className={footerStyles.footer__logo}
+            src="/assets/images/logo2.png"
+            alt="Kirin Logo"
+          />
+        </Link>
         <div className={footerStyles.footer__socialContents}>
           <a href="mailto: tsuper2009@gmail.com">
             <MailIcon className={footerStyles.footer__emailIcon} />
