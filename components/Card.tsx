@@ -7,7 +7,12 @@ import cardStyles from '../styles/Card.module.scss';
 const CardPicture: React.FC<card> = ({ mainPicture, name }) => {
   return (
     <div className={cardStyles.card__pictureHolder}>
-      <img src={mainPicture} alt={name} className={cardStyles.card__picture} />
+      <img
+        src={mainPicture}
+        alt={name}
+        className={cardStyles.card__picture}
+        style={{ borderRadius: '10%' }}
+      />
     </div>
   );
 };

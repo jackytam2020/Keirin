@@ -12,7 +12,7 @@ const Button = () => {
         smooth={true}
         duration={1000}
         className={buttonStyles.container}
-        offset={-50}
+        offset={-120}
       >
         <h3>Browse Products</h3>
       </Link>

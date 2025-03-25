@@ -1,2 +1,12 @@
 .home {
+  background-color: #f5e0c2; /* Warm beige */
+  background-image: radial-gradient(
+    circle,
+    rgba(200, 158, 141, 0.2) 10%,
+    transparent 30%
+  );
+
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
 }

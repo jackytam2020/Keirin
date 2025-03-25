@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import productViewStyles from '../styles/ProductView.module.scss';
 
-import Carousel from './Carousel';
+import GridDisplay from './GridDisplay';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 interface ProductType {
@@ -26,17 +26,19 @@ const ProductView: React.FC<ProductView> = ({
       <p className={productViewStyles.productView__header}>{productTitle}</p>
 
       <div className={productViewStyles.productView__carouselContainer}>
-        <Carousel currentProduct={currentProduct} />
+        <GridDisplay currentProduct={currentProduct} />
       </div>
 
       <section className={productViewStyles.productView__descriptionSection}>
-        <p style={{ fontSize: '24px' }}>Description</p>
+        <p style={{ fontSize: '24px', color: ' #8e7b57' }}>Description</p>
         <p className={productViewStyles.productView__description}>
           {currentProduct.description}
         </p>
         {currentProduct.specifications && (
           <>
-            <p style={{ fontSize: '24px', marginTop: '2rem' }}>
+            <p
+              style={{ fontSize: '24px', marginTop: '2rem', color: ' #8e7b57' }}
+            >
               Specifications
             </p>
             <p className={productViewStyles.productView__specifications}>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Head>
-        <title>Keirin Enterprises</title>
+        <title>Jusco Global Co.,Ltd,</title>
       </Head>
       <meta
         name="Home Page"

@@ -1,5 +1,29 @@
 export const products = [
   {
+    name: 'Furniture',
+    mainPicture: '/assets/images/furniture5.jpg',
+    pictures: [
+      '/assets/images/furniture1.jpg',
+      '/assets/images/furniture2.jpg',
+      '/assets/images/furniture3.jpg',
+      '/assets/images/furniture4.jpg',
+      '/assets/images/furniture5.jpg',
+    ],
+    description: '',
+  },
+  {
+    name: 'Fir Tree Fencing',
+    mainPicture: '/assets/images/fir11.jpeg',
+    pictures: [
+      '/assets/images/fir11.jpeg',
+      '/assets/images/fir7.jpeg',
+      '/assets/images/fir8.jpeg',
+      '/assets/images/fir9.jpeg',
+      '/assets/images/fir10.jpeg',
+    ],
+    description: '',
+  },
+  {
     name: 'Door',
     mainPicture: '/assets/images/door_1-removebg-preview.png',
     pictures: [

@@ -20,8 +20,8 @@ const Footer = () => {
           <p>+886 905175947</p>
         </div>
         <p className={footerStyles.footer__address}>
-          © 2023 by Keirin Enterprise co.,ltd., Room No.1, 8th floor, 102 Ling
-          Yun Street, North District, Hsin Chu, Taiwan 300
+          Room No.1, 8th Floor, 102 Ling Yun Street, North district, Hsin Chu,
+          Taiwan 300
         </p>
       </div>
     </footer>

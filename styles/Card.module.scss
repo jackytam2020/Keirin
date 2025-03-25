@@ -1,37 +1,39 @@
 @use '../styles/partials/breakpoints' as *;
 
 .card {
-  background-color: white;
   width: 48%;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(92, 95, 110, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(12px); /* Blur effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow */
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform: scale(1);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
   &__name {
-    font-size: 2em;
+    font-size: 2rem;
+    color: #5a4a42; /* Dark Brown */
   }
 
   &__left {
     flex: 0 0 55%;
-    // background-color: yellow;
   }
 
   &__right {
-    // background-color: aqua;
     flex: 0 0 45%;
     aspect-ratio: 1/1;
   }
 
   &__pictureHolder {
-    background-color: #afd9f7;
+    background-color: #e3b8a1; /* Soft Cashmere */
     height: 100%;
     width: 100%;
     display: flex;
@@ -44,13 +46,8 @@
     width: 65%;
     height: 65%;
     object-fit: contain;
-    object-position: 50% 50%;
+    object-position: center;
   }
-}
-
-.card__hovered {
-  transform: scale(1.05);
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 @include small() {
@@ -64,9 +61,8 @@
 
     &__right {
       flex: 0 0 55%;
-      aspect-ratio: 1/1;
-      // background-color: bisque;
     }
+
     &__name {
       font-size: 1rem;
     }
@@ -76,7 +72,7 @@
 @include medium() {
   .card {
     &__name {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
   }
 }

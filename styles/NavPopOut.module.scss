@@ -1,23 +1,35 @@
 .navPopOut {
   position: fixed;
-  width: 200px;
+  top: 0; /* Ensures it stays at the top */
+  right: 0;
+  width: 240px; /* Slightly wider for better readability */
   height: 100vh;
-  background-color: white;
+  background: rgba(245, 224, 194, 0.85); /* Soft beige with transparency */
+  backdrop-filter: blur(12px); /* Frosted glass effect */
   right: 0;
   z-index: 99;
-  transition: 0.5s ease-in-out;
-  padding: 2.5rem 1rem 1rem 1rem;
-  overflow: hidden;
-  border-left: 1px solid rgb(163, 159, 159, 0.5);
+  transition: transform 0.5s ease-in-out;
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
+  overflow-y: auto;
+  border-left: 1px solid rgba(90, 74, 66, 0.3); /* Softer brown border */
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1); /* Adds depth */
 
   &__topHeader {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 
   &__exitIcon {
     cursor: pointer;
+    font-size: 1.5rem;
+    color: #5a4a42; /* Warm brown */
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #8e7b57; /* Goldish-brown on hover */
+    }
   }
 
   &__productList {
@@ -26,12 +38,20 @@
   }
 
   &__product {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    color: #5a4a42; /* Warm brown */
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8e7b57; /* Goldish-brown */
+      cursor: pointer;
+    }
   }
 }
 
 .navPopOutClosed {
   @extend .navPopOut;
-  right: -100%;
+  transform: translateX(100%);
 }
