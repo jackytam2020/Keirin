@@ -28,7 +28,7 @@
   }
 
   &__logo {
-    width: 100px;
+    width: 150px;
     height: auto;
     object-fit: contain;
   }
@@ -42,6 +42,6 @@
 
 @include medium() {
   .nav {
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 2rem;
   }
 }

@@ -4,12 +4,13 @@ export const products = [
     mainPicture: '/assets/images/furniture5.jpg',
     pictures: [
       '/assets/images/furniture1.jpg',
-      '/assets/images/furniture2.jpg',
+      '/assets/images/furniture2.png',
       '/assets/images/furniture3.jpg',
       '/assets/images/furniture4.jpg',
       '/assets/images/furniture5.jpg',
+      '/assets/images/furniture6.png',
     ],
-    description: '',
+    description: 'Solid wood products: Bedrooms, Benches, Living Rooms',
   },
   {
     name: 'Fir Tree Fencing',
@@ -21,7 +22,8 @@ export const products = [
       '/assets/images/fir9.jpeg',
       '/assets/images/fir10.jpeg',
     ],
-    description: '',
+    description:
+      'Very durable and has a strong specific strength. It also has a high flexibility and is weather-resistant.',
   },
   {
     name: 'Door',
